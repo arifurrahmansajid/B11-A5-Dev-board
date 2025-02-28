@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-200">
+    <div class="max-w-7xl mx-auto">
+      <!-- navbar section -->
+      <div class="navbar bg-base-100 shadow-sm mb-6">
+        <div class="flex-1">
+          <div class="flex items-center">
+            <img class="w-10" src="./assets/logo.png" alt="" />
+            <a class="btn btn-ghost text-xl">DevBoard</a>
+          </div>
+        </div>
+        <div class="flex gap-6 items-center">
+          <div class="dropdown dropdown-end">
+            <div class="badge badge-soft badge-neutral flex gap-1 items-center">
+              <img class="w-4" src="./assets/checkbox.png" alt="" />
+              <p class="font-extrabold">23</p>
+            </div>
+            <div
+              tabindex="0"
+              class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
+            ></div>
+          </div>
+          <div>
+            <div class="w-8 rounded-full">
+              <img src="./assets/theme-btn.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main  -->
+
+      <div class="flex gap-3 h-[900px]">
+        <!-- left side -->
+        <div class="w-3/4 bg-white rounded-xl">
+          <!--   New Today section -->
+          <section class="flex mt-6 justify-around px-4">
+            <!-- Task Assigned  -->
+            <div
+              class="bg-slate-200 w-[220px] h-[128px] rounded flex items-center justify-center"
+            >
+              <div class="flex items-center justify-center gap-2">
+                <div
+                  class="h-12 w-12 bg-slate-100 rounded-full flex items-center justify-center"
+                >
+                  <img class="w-6 h-6" src="./assets/checkbox.png" alt="" />
+                </div>
+                <div>
+                  <p class="font-bold">Task Assigned</p>
+                  <h3 class="text-3xl font-bold">6</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Discover Something New Today! -->
+            <div id="new-today"
+              class="bg-[#536AFA] w-[350px] h-[128px] rounded flex items-center justify-around cursor-pointer"
+            >
+              <div class="flex items-center justify-around gap-5">
+                <img class="w-16 h-16" src="./assets/board.png" alt="" />
+                <h3 class="text-xl text-white">
+                  Discover Something <br />
+                  New Today!
+                </h3>
+              </div>
+            </div>
+            <!-- Current Date  -->
+            <div
+              class="bg-slate-200 w-[220px] h-[128px] rounded flex items-center justify-center"
+            >
+              <div class="flex items-center justify-center gap-2">
+                <div
+                  class="h-12 w-12 bg-slate-100 rounded-full flex items-center justify-center"
+                >
+                  <img class="w-6 h-6" src="./assets/calender.png" alt="" />
+                </div>
+                <div>
+                  <p class="font-bold">
+                    Tue Feb 25 2025
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- card section -->
+          <section class="grid grid-cols-3 p-6 gap-4">
+            <!-- card-1 -->
+            <div class="card w-full bg-gray-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge badge-soft badge-neutral">Shop Ease</span>
+                <div class="flex justify-between">
+                  <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+                </div>
+                <div class="w-full h-[150px] bg-white p-4 rounded">
+                  A card component has a figure, a body part, and inside body there are title and actions parts
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                  <div>
+                    <p>Deadline</p>
+                    <p>21 March 2025</p>
+                  </div>
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card w-full bg-gray-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge badge-soft badge-neutral">Soft Pay</span>
+                <div class="flex justify-between">
+                  <h2 class="text-xl font-bold">Add Pay Success Modal</h2>
+                </div>
+                <div class="w-full h-[150px] bg-white p-4 rounded">
+                  A card component has a figure, a body part, and inside body there are title and actions parts
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                  <div>
+                    <p>Deadline</p>
+                    <p>25 March 2025</p>
+                  </div>
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card w-full bg-gray-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge badge-soft badge-neutral">Meta</span>
+                <div class="flex justify-between">
+                  <h2 class="text-xl font-bold">Add new reaction 👋</h2>
+                </div>
+                <div class="w-full h-[150px] bg-white p-4 rounded">
+                  A card component has a figure, a body part, and inside body there are title and actions parts
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                  <div>
+                    <p>Deadline</p>
+                    <p>31 March 2025</p>
+                  </div>
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- card-4 -->
+            <div class="card w-full bg-gray-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge badge-soft badge-neutral">Programming Hero</span>
+                <div class="flex justify-between">
+                  <h2 class="text-xl font-bold">Fix Video Loading Issue</h2>
+                </div>
+                <div class="w-full h-[150px] bg-white p-4 rounded">
+                  A card component has a figure, a body part, and inside body there are title and actions parts
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                  <div>
+                    <p>Deadline</p>
+                    <p>21 March 2025</p>
+                  </div>
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- card-5 -->
+            <div class="card w-full bg-gray-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge badge-soft badge-neutral">Google LLC</span>
+                <div class="flex justify-between">
+                  <h2 class="text-xl font-bold">Integrate AI search</h2>
+                </div>
+                <div class="w-full h-[150px] bg-white p-4 rounded">
+                  A card component has a figure, a body part, and inside body there are title and actions parts
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                  <div>
+                    <p>Deadline</p>
+                    <p>01 April 2025</p>
+                  </div>
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+            <!-- card-6 -->
+            <div class="card w-full bg-gray-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge badge-soft badge-neutral">Polygon Tech</span>
+                <div class="flex justify-between">
+                  <h2 class="text-xl font-bold">Review Ami Probashi Site</h2>
+                </div>
+                <div class="w-full h-[150px] bg-white p-4 rounded">
+                  A card component has a figure, a body part, and inside body there are title and actions parts
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                  <div>
+                    <p>Deadline</p>
+                    <p>5 May 2025</p>
+                  </div>
+                  <button class="btn btn-primary">Completed</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- right side -->
+        <div class="w-1/4 bg-white p-4 rounded-xl">
+          <h2 class="font-bold text-center mb-3">Activity Log</h2>
+          <div class="flex items-center justify-center">
+            <button class="btn btn-primary">Clear History</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/changepage.js"></script>
+  </body>
+</html>
